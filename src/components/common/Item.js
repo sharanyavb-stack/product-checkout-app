@@ -15,14 +15,14 @@ function Item({ product, loading }) {
     <Card className="card">
       <img src={product.image} alt="" />
       <Tooltip title={product.title}>
-        <h4 className="overflowText">{product.title}</h4>
+        <Typography variant="subtitle2" mt={1} mb={1} className="overflowText">{product.title}</Typography>
       </Tooltip>
       <div className="rating-div">
       <Rating name="size-small" defaultValue={product.rating.rate} precision={0.5} size="small" readOnly/> 
       <Typography variant='caption' >({product.rating.count})</Typography>
       </div>
+      <Typography variant="h6" sx={{fontSize: '16px'}} mt={1} mb={1} className="overflowText">${product.price}</Typography>
       
-      <h5>${product.price}</h5>
       <Button
         variant="contained"
         size="small"
