@@ -1,0 +1,9 @@
+.cardCss {
+    padding: 2%;
+   
+}
+.cardWrapper {
+    max-height: 400px;
+    min-height: 100px;
+    overflow-y: auto !important;
+}

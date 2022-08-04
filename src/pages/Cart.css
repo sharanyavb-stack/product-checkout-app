@@ -1,0 +1,39 @@
+
+.cartWrapper {
+    max-height: 300px;
+    min-height: 100px;
+    overflow-y: auto;
+}
+.cartCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+.totalCard {
+    padding: 0 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.cardCss {
+    margin-top: 2%;
+}
+.cartImg {
+    height: 40px !important;
+}
+.cartTitle {
+    margin: 0;
+}
+.btnContinue, .btnContinue:hover {
+    background: orange !important;
+     color: black !important
+}
+.buttonDiv {
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

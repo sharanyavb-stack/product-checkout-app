@@ -1,0 +1,63 @@
+
+  
+  svg {
+      width: 45px;
+      height: 45px;
+      transition: transform .5s ease-out;
+      
+    }
+    #red-exclamation {
+        animation: bounce .5s ease-out forwards;
+        transform-origin: center center;
+        
+      }
+      .exclamation {
+        opacity: 0;
+        stroke-dasharray: 100;
+        stroke-dashoffset: 100;
+        animation: excl 1.5s ease forwards .5s;
+      }
+      .dot {
+        opacity: 0;
+        stroke-width: 30;
+        stroke-linecap: round;
+        animation: dot-fade .175s ease forwards .7s;
+      }
+  @keyframes excl {
+    0% {
+      stroke-dashoffset: 100;
+    }
+    10% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  @keyframes dot-fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes bounce {
+    0% {
+      opacity: 0;
+      transform: scale(0.1);
+    }
+    50% {
+      transform: scale(1.0);
+    }
+    75% {
+      transform: scale(0.6);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(0.9);
+    }
+  }
