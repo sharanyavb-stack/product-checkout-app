@@ -166,7 +166,7 @@ const Payment = () => {
             </Grid>
             <Grid item xs={6}>
               <Typography variant="subtitle2" align="right">
-                ${totalPrice - discountAmount}
+                ${(totalPrice - discountAmount).toFixed(2)}
               </Typography>
             </Grid>
           </Grid>
