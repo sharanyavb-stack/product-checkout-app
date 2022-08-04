@@ -11,7 +11,7 @@ const PaymentSlice = createSlice({
   },
   reducers: {
     selectDiscount(state, action) {
-        state.selectedValue = state.discounts.find(item => item.id == Number(action.payload))
+        state.selectedValue = state.discounts.find(item => item.id === Number(action.payload))
     },
    
   },
